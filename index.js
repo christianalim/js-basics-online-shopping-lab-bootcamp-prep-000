@@ -27,7 +27,7 @@ function viewCart() {
   if(cart.length === 0){
     return ("Your shopping cart is empty.");
   } else if(cart.length === 1) {
-    var one = `In your cart, you have ${Object.values(cart[0])[0]} at $${Object.values(cart[0])[1]}`
+    var one = `In your cart, you have ${Object.values(cart[0])[0]} at $${Object.values(cart[0])[1]}.`
     return one;
   }
 
