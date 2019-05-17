@@ -40,9 +40,6 @@ function viewCart() {
     var threeplus = `In your cart, you have ${cart2.join(', ')}, and ${Object.values(cart[cart.length - 1])[0]} at $${Object.values(cart[cart.length - 1])[1]}.`
     return threeplus;
   }
-
-
-
 }
 
 
