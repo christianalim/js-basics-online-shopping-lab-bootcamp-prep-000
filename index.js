@@ -32,7 +32,6 @@ function viewCart() {
     var item = Object.values(cart[i])[0];
     var price = cart[i][Object.keys(cart[i])[1]];
     cartItems.push(item + " at $" + price);
-    i++;
     }
   } else if(cart.length === 1){
 
