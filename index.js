@@ -64,11 +64,11 @@ function removeFromCart(item) {
     if(cart[i].hasOwnProperty(item)){
       var newCart = cart.splice([i], 1);
       return newCart
-    } else {
-      return "That item is not in your cart."
+      } 
     }
+  console.log("That item is not in your cart.")
+  return cart
   }
-}
 
 function placeOrder(cardNumber) {
   // write your code here
