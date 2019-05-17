@@ -35,7 +35,7 @@ function viewCart() {
   } else {
     var cart2 = []
     for(var i = 0; i < cart.length - 1; i++){
-      cart2.push(`${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[1]}`)
+      cart2.push(`${Object.values(cart[i])[0]} at $${Object.values(cart[i])[1]}`)
     }
     var threeplus = `In your cart, you have ${cart2.join(', ')}, and ${Object.values(cart[cart.length - 1])[0]} and $${Object.values(cart[cart.length - 1])[1]}.`
     return threeplus;
