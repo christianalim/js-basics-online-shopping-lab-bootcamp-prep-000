@@ -32,6 +32,13 @@ function viewCart() {
   } else if(cart.length === 2) {
     var two = `In your cart, you have ${Object.values(cart[0])[0]} at $${Object.values(cart[0])[1]}, and ${Object.values(cart[1])[0]} at $${Object.values(cart[1])[1]}.`
     return two;
+  } else {
+    var cart2 = []
+    for(var i = 0; i < cart.length - 1; i++){
+      cart2.push(`${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[1]}`)
+    }
+    var threeplus = `In your cart, you have ${cart2.join(', ')}, and ${Object.values(cart[cart.length - 1])[0]} and $${Object.values(cart[cart.length - 1])[1]}.`
+    return threeplus;
   }
 
 
