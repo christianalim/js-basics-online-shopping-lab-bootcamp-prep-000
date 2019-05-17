@@ -74,7 +74,7 @@ function placeOrder(cardNumber) {
   if(cardNumber == null){
     return "Sorry, we don't have a credit card on file for you."
   } else {
-    totally = total();
+    var totally = total();
     for(var i = 0; i < cart.length; i++){
       cart.pop();
     }
