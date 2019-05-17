@@ -26,18 +26,10 @@ function viewCart() {
   // write your code here cart[i].itemName and cart[i].itemPrice
   if(cart.length === 0){
     return ("Your shopping cart is empty.");
-  } else if(cart.length >= 1) {
-  var cartItems = []
-  for(let i = 0; i < cart.length; i++){
-    var item = Object.values(cart[i])[0];
-    var price = cart[i](Object.keys(cart[i])[1]);
-    cartItems.push(item + " at $" + price);
-    }
-  } else if(cart.length === 1){
-
+  } else if(cart.length === 1) {
+    var one = `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}`
   }
-  var caseover1 = `In your cart, you have ${cartItems.join(", ")}, and ${Object.values(cart[cart.length - 1])[0]} at $${cart[cart.length - 1][Object.keys(cart[cart.length -1])[1]]}.`;
-  return caseover1
+
 
 }
 
