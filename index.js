@@ -29,7 +29,7 @@ function viewCart() {
   } else if(cart.length > 1) {
   var cartItems = []
   for(let i = 0; i < cart.length; i++){
-    var item = Object.values(cart[i])[0];
+    var item = Object.values(cart[i])[i];
     var price = cart[i][Object.keys(cart[i])[1]];
     cartItems.push(item + " at $" + price);
     i++;
